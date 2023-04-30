@@ -117,7 +117,10 @@ body {
     margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center
 }
 
 .social-icon {
@@ -183,7 +186,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .profile__btn {
