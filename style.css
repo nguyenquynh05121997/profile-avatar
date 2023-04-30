@@ -1,0 +1,220 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #21D4FD;
+    background-image: linear-gradient(133deg, #21D4FD 0%, #B721FF 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.profile {
+    width: 700px;
+    height: auto;
+    max-width: 100%;
+    background: #fff;
+    padding: 50px 60px;
+    border-radius: 14px;
+    position: relative;
+}
+
+.profile__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #9379FF;
+    position: absolute;
+    left: 50%;top: -75px;
+    transform: translateX(-50%);
+    box-shadow: 2px 1px 128px -15px rgba(147,121,255,0.59);
+    -webkit-box-shadow: 2px 1px 128px -15px rgba(147,121,255,0.59);
+    -moz-box-shadow: 2px 1px 128px -15px rgba(147,121,255,0.59);
+}
+
+.profile__avatar img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 20%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile__name {
+    text-align: center;
+    color: #6944FF;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.profile__work {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile__job {
+    text-align: center;
+    font-weight: 500;
+    color: #627688;
+}
+
+.text-country {
+    color: #314D63;
+    font-weight: 700;
+}
+
+.profile__country {
+   display: flex;
+   gap: 10px;
+}
+
+.location-icon {
+    font-size: 20px;
+}
+
+.profile__trends {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trend-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: #314D63;
+}
+
+.trend-name {
+    color: #627688
+}
+
+.profile__social {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icon {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 128px -15px rgba(147,121,255,0.59);
+    -webkit-box-shadow: 2px 1px 128px -15px rgba(147,121,255,0.59);
+    -moz-box-shadow: 2px 1px 128px -15px rgba(147,121,255,0.59);
+    transition: all 0.25s linear;
+
+}
+
+.social-icon:nth-child(1) {
+    background-image: linear-gradient(120deg, rgb(54, 94, 162) 0%, #1573CC 100%);
+    box-shadow: 2px 1px 40px 2px rgba(54, 94, 162,0.59);
+}
+
+.social-icon:nth-child(2) {
+    background-image: linear-gradient(120deg, rgb(27, 153, 234) 0%, #127ACF 100%);
+    box-shadow: 2px 1px 40px 2px rgba(27, 153, 234,0.59);
+}
+
+
+.social-icon:nth-child(3) {
+    background-image: linear-gradient(120deg, rgb(217, 34, 84) 0%, #E94935 100%);
+    box-shadow: 2px 1px 40px 2px rgba(217, 34, 84,0.59);
+}
+
+.social-icon:nth-child(4) {
+    background-image: linear-gradient(120deg, rgb(83, 83, 221) 0%, #E42F66 100%);
+    box-shadow: 2px 1px 40px 2px rgba(83, 83, 221,0.59);
+}
+
+.social-icon:nth-child(5) {
+    background-image: linear-gradient(120deg, #365ea2 0%, #1573CC 100%);
+    box-shadow: 2px 1px 40px 2px rgba(54, 94, 162,0.59);
+}
+
+.social-icon:nth-child(6) {
+    background-image: linear-gradient(120deg, rgb(218, 36, 82) 0%, #EC4F31 100%);
+    box-shadow: 2px 1px 40px 2px rgba(218, 36, 82,0.59);
+}
+
+.social-icon:nth-child(7) {
+    background-image: linear-gradient(120deg, rgb(54, 94, 162) 0%, #1573CC 100%);
+    box-shadow: 2px 1px 40px 2px rgba(54, 94, 162,0.59);
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.profile__button {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.profile__btn {
+    color: #fff;
+    font-weight: 600;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    min-height: 50px;
+    min-width: 150px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    transition: all 0.25s linear;
+}
+
+.profile__btn:first-child {
+    background-image: linear-gradient(133deg, #1F9DEF 0%, #0F75CB 100%);
+    box-shadow: 2px 1px 20px 2px rgba(54, 94, 162,0.59);
+}
+
+.profile__btn:last-child {
+    background-image: linear-gradient(133deg, #D71B57 0%, #EE5528 100%);
+    box-shadow: 2px 1px 20px 2px rgba(217, 34, 84,0.59);
+}
+
+.profile__btn:hover {
+    transform: translateY(-4px);
+    transition: all 0.25s linear;
+    cursor: pointer;
+}
+
+
